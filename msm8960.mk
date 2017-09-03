@@ -42,6 +42,11 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
+# Audio HIDL interfaces
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8960 \
