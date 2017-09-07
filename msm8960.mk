@@ -112,9 +112,6 @@ PRODUCT_PACKAGES += \
 # WiFi
 PRODUCT_PACKAGES += \
     hostapd \
-    hostapd.accept \
-    hostapd.deny \
-    hostapd_default.conf \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
