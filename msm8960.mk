@@ -133,9 +133,17 @@ PRODUCT_PACKAGES += \
 # WiFi
 PRODUCT_PACKAGES += \
     hostapd \
+    libqsap_sdk \
+    libQWiFiSoftApCfg \
+    libwpa_client \
+    wcnss_service \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# WiFi HIDL interfaces
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service
 
 # Vendor Interface Manifest
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
