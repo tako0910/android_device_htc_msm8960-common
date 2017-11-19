@@ -47,6 +47,14 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    libbt-vendor
+
+# Bluetooth HIDL interfaces
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8960 \
@@ -111,7 +119,16 @@ PRODUCT_PACKAGES += \
 
 # Sensors HIDL interfaces
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
+
+# Thermal HAL interfaces
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl
+
+# Usb HAL interfaces
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
 
 # WiFi
 PRODUCT_PACKAGES += \
